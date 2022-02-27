@@ -30,11 +30,12 @@
         {
             this.lblMain = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
+            this.txtEntry = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblMain
             // 
-            this.lblMain.Location = new System.Drawing.Point(38, 41);
+            this.lblMain.Location = new System.Drawing.Point(42, -4);
             this.lblMain.Name = "lblMain";
             this.lblMain.Size = new System.Drawing.Size(337, 133);
             this.lblMain.TabIndex = 0;
@@ -51,16 +52,25 @@
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
+            // txtEntry
+            // 
+            this.txtEntry.Location = new System.Drawing.Point(83, 143);
+            this.txtEntry.Name = "txtEntry";
+            this.txtEntry.Size = new System.Drawing.Size(260, 20);
+            this.txtEntry.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 282);
+            this.Controls.Add(this.txtEntry);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.lblMain);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,6 +78,7 @@
 
         private System.Windows.Forms.Label lblMain;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.TextBox txtEntry;
     }
 }
 

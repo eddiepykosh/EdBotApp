@@ -20,9 +20,10 @@ namespace EdBotApp
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            var responseString = "WEBSERVER"
-            .PostUrlEncodedAsync(new { Hey = "hi"})
-            .ReceiveString();
+            string messageContent = txtEntry.Text;
+            Console.WriteLine(messageContent);
+            var responseString = "http://edbot.pykosh.com:1898"
+            .PostStringAsync(messageContent).ReceiveString();
 
             lblMain.Text = responseString.Result.ToString();
 
