@@ -68,7 +68,7 @@
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.lblMain);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EdBot.exe";
             this.ResumeLayout(false);
             this.PerformLayout();
 
