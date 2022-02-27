@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net.Http;
+using Flurl.Http;
 
 namespace EdBotApp
 {
@@ -20,10 +20,15 @@ namespace EdBotApp
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            var responseString = "WEBSERVER1"
+            .PostUrlEncodedAsync(new { Hey = "hi"})
+            .ReceiveString();
 
-            lblMain.Text = "uwu";
+            lblMain.Text = responseString.Result.ToString();
+
 
         }
+
     }
     
 }

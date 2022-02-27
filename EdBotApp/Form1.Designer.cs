@@ -36,7 +36,7 @@
             // 
             this.lblMain.Location = new System.Drawing.Point(38, 41);
             this.lblMain.Name = "lblMain";
-            this.lblMain.Size = new System.Drawing.Size(337, 103);
+            this.lblMain.Size = new System.Drawing.Size(337, 133);
             this.lblMain.TabIndex = 0;
             this.lblMain.Text = "Stuff";
             this.lblMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
