@@ -20,7 +20,7 @@ namespace EdBotApp
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            var responseString = "WEBSERVER1"
+            var responseString = "WEBSERVER"
             .PostUrlEncodedAsync(new { Hey = "hi"})
             .ReceiveString();
 
