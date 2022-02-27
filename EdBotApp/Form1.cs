@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
 
 namespace EdBotApp
 {
@@ -16,5 +17,13 @@ namespace EdBotApp
         {
             InitializeComponent();
         }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+
+            lblMain.Text = "uwu";
+
+        }
     }
+    
 }
