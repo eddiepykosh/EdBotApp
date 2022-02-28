@@ -24,13 +24,13 @@ namespace EdBotApp
         private void btnSend_Click(object sender, EventArgs e)
         {
             // MessageBox.Show(webServer);
-            string messageContent = txtEntry.Text;
+            string messageContent = txtChannel.Text + ":" + txtEntry.Text;
             // Console.WriteLine(messageContent);
             try
             {
                 var responseString = webServer
                 .PostStringAsync(messageContent).ReceiveString();
-                lblMain.Text = responseString.Result.ToString();
+                lblMain.Text = "Message to EdBot Server successful: " + responseString.Result.ToString();
             }
             catch (Exception ex)
             {
@@ -39,9 +39,14 @@ namespace EdBotApp
 
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     public static class Prompt
     {
+        //Ripped STRAIGHT from StackOverflow
         public static string ShowDialog(string text, string caption)
         {
             Form prompt = new Form()
